@@ -3,6 +3,10 @@
    License: none (public domain)
 */
 
+body, html {
+  height: 100%;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,7 +27,6 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -55,6 +58,9 @@ table {
 
 body {
   background: #293f50;
+  background-image: url("swtor.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
   color: #888;
   font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -72,7 +78,7 @@ body {
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
-.container,
+
 .grid {
   margin: 0 auto;
   width: 960px;
@@ -80,6 +86,8 @@ body {
 .container {
   padding-left: 30px;
   padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .grid,
 .col-1-3,
@@ -97,25 +105,6 @@ body {
 }
 .col-2-3 {
   width: 66.66%;
-}
-
-/*
-  ========================================
-  Clearfix
-  ========================================
-*/
-
-.group:before,
-.group:after {
-  content: "";
-  display: table;
-}
-.group:after {
-  clear: both;
-}
-.group {
-  clear: both;
-  *zoom: 1;
 }
 
 /*
@@ -182,20 +171,6 @@ em {
 
 /*
   ========================================
-  Leads
-  ========================================
-*/
-
-.lead {
-  text-align: center;
-}
-.lead p {
-  font-size: 21px;
-  line-height: 33px;
-}
-
-/*
-  ========================================
   Links
   ========================================
 */
@@ -250,26 +225,29 @@ p a {
   ========================================
 */
 
-.logo {
-  border-top: 4px solid #648880;
-  float: left;
-  font-size: 48px;
-  font-weight: 100;
-  letter-spacing: .5px;
-  line-height: 44px;
-  padding: 40px 0 22px 0;
-  text-transform: uppercase;
-}
-.tagline {
-  margin: 66px 0 22px 0;
-  text-align: right;
-}
 .primary-nav {
   font-size: 14px;
   font-weight: 400;
   letter-spacing: .5px;
   text-transform: uppercase;
+  padding-top: 30px;
+  float: right;
 }
+
+/*
+  ========================================
+  News
+  ========================================
+*/
+
+.news {
+  height: 300px;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  margin: 0 auto;
+}
+
 
 /*
   ========================================
@@ -282,6 +260,7 @@ p a {
   font-size: 14px;
   padding-bottom: 44px;
   padding-top: 44px;
+  bottom: 0;
 }
 .primary-footer small {
   float: left;
@@ -310,6 +289,7 @@ p a {
   padding: 22px 80px 66px 80px;
   text-align: center;
 }
+
 .hero h2 {
   font-size: 36px;
 }
