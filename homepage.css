@@ -67,7 +67,7 @@ body {
 
 /*
   ========================================
-  Grid
+  Rows
   ========================================
 */
 
@@ -79,7 +79,7 @@ body {
           box-sizing: border-box;
 }
 
-.grid {
+.rowedit {
   margin: 0 auto;
   width: 960px;
 }
@@ -87,46 +87,27 @@ body {
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
 }
-.grid,
-.col-1-3,
-.col-2-3 {
+.rowedit,
+.col-1-3 {
   padding-left: 15px;
   padding-right: 15px;
 }
-.col-1-3,
-.col-2-3  {
-  display: inline-block;
-  vertical-align: top;
-}
+
 .col-1-3 {
   width: 33.33%;
-}
-.col-2-3 {
-  width: 66.66%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
 }
 
-/*
-  ========================================
-  Rows
-  ========================================
-*/
-
-.row,
-.row-alt {
-  min-width: 960px;
-}
 .row {
-  background: #fff;
+  background: black;
+  background:rgba(0,0,0,0.5);
   padding: 66px 0 44px 0;
-}
-.row-alt {
-  background: #cbe2c1;
-  background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
-  background:    -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
-  background:         linear-gradient(to right, #a1d3b0, #f6f1d3);
-  padding: 44px 0 22px 0;
+  box-shadow: inset 0 0 0 0,inset 0 -11px 8px -10px #343434;
+  min-width: 960px;
 }
 
 /*
@@ -136,7 +117,8 @@ body {
 */
 
 h1, h2, h3, h4 {
-  color: #648880;
+  color: white;
+  font-weight: bold;
 }
 h1, h3, h4, h5, p {
   margin-bottom: 22px;
@@ -169,6 +151,10 @@ em {
   font-style: italic;
 }
 
+p {
+  color: white;
+}
+
 /*
   ========================================
   Links
@@ -176,12 +162,10 @@ em {
 */
 
 a {
-  color: #648880;
+  color: #7B1FA2;
   text-decoration: none;
 }
-a:hover {
-  color: #a9b2b9;
-}
+
 p a {
   border-bottom: 1px solid #dfe2e5;
 }
@@ -191,7 +175,8 @@ p a {
 }
 .primary-header a:hover,
 .primary-footer a:hover {
-  color: #648880;
+  color:#a800d6;
+  font-weight: bold;
 }
 
 /*
@@ -216,12 +201,45 @@ p a {
 }
 .btn-alt:hover {
   background: #fff;
-  color: #648880;
+  color:#a800d6;
+}
+
+.rowsbtn {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+
+.rowbtn {
+	box-shadow:inset 0px 1px 3px 0px black;
+	background-color: clear;
+	border-radius:5px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 23px;
+	text-decoration:none;
+	text-shadow:0px -1px 0px #2b665e;
+}
+.rowbtn:hover {
+	background:linear-gradient(to bottom, #9200bb 5%, #7B1FA2 100%);
+	background-color:#ffffff;
+}
+.rowbtn:active {
+	position:relative;
+	top:1px;
 }
 
 /*
   ========================================
-  Primary header
+  Header
   ========================================
 */
 
@@ -244,14 +262,36 @@ p a {
   height: 300px;
   width: 100%;
   background-color: black;
-  opacity: 0.5;
-  margin: 0 auto;
+  background:rgba(0,0,0,0.5);
+  padding: 50px;
+  box-shadow: inset 0 11px 8px -10px #343434;
+  color: white;
 }
+.newsimage {
+  width: 336px; 
+  height: 210px; 
+  border-radius: 10px;
+  box-shadow: 0 0 20px 5px black;
+  float: left;
+}
+.des {
+  float: left;
+  padding-left: 30px;
+  height: 100px;
+  width: 400px;
 
+}
+strong {
+  font-size: 20px;
+  font-weight: bold;
+}
+.box {
+  margin: 0 0 0 30%;
+}
 
 /*
   ========================================
-  Primary footer
+  Footer
   ========================================
 */
 
@@ -260,11 +300,17 @@ p a {
   font-size: 14px;
   padding-bottom: 44px;
   padding-top: 44px;
-  bottom: 0;
+  position:relative;
+  height: 100px;
+  margin-top: 60px;
+  clear: both;
 }
 .primary-footer small {
   float: left;
   font-weight: 400;
+}
+.yort {
+  font-weight: bold;
 }
 
 /*
@@ -298,5 +344,12 @@ p a {
   font-weight: 100;
 }
 .teaser a:hover h3 {
-  color: #a9b2b9;
+  color:#a800d6;
 }
+
+
+
+
+
+
+
