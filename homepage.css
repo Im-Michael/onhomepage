@@ -58,13 +58,14 @@ table {
 
 body {
   background: #293f50;
-  background-image: url("swtor.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
   color: #888;
   font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.bg-image {
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
 /*
   ========================================
   Rows
@@ -79,20 +80,11 @@ body {
           box-sizing: border-box;
 }
 
-.rowedit {
-  margin: 0 auto;
-  width: 960px;
-}
 .container {
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 30px;
   padding-bottom: 60px;
-}
-.rowedit,
-.col-1-3 {
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .col-1-3 {
@@ -100,6 +92,13 @@ body {
   display: inline-block;
   vertical-align: top;
   text-align: center;
+  color: white;
+}
+
+.row,
+.col-1-3 {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .row {
@@ -107,7 +106,8 @@ body {
   background:rgba(0,0,0,0.5);
   padding: 66px 0 44px 0;
   box-shadow: inset 0 0 0 0,inset 0 -11px 8px -10px #343434;
-  min-width: 960px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 /*
@@ -204,18 +204,8 @@ p a {
   color:#a800d6;
 }
 
-.rowsbtn {
-  background: none;
-  border: 2px solid;
-  font: inherit;
-  line-height: 1;
-  margin: 0.5em;
-  padding: 1em 2em;
-}
-
 .rowbtn {
 	box-shadow:inset 0px 1px 3px 0px black;
-	background-color: clear;
 	border-radius:5px;
 	border:1px solid #ffffff;
 	display:inline-block;
@@ -224,9 +214,13 @@ p a {
 	font-family:Arial;
 	font-size:15px;
 	font-weight:bold;
-	padding:11px 23px;
+	padding:11px 22px;
 	text-decoration:none;
-	text-shadow:0px -1px 0px #2b665e;
+  background: none;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
 }
 .rowbtn:hover {
 	background:linear-gradient(to bottom, #9200bb 5%, #7B1FA2 100%);
@@ -250,6 +244,7 @@ p a {
   text-transform: uppercase;
   padding-top: 30px;
   float: right;
+  position: relative;
 }
 
 /*
@@ -259,34 +254,30 @@ p a {
 */
 
 .news {
-  height: 300px;
-  width: 100%;
   background-color: black;
   background:rgba(0,0,0,0.5);
   padding: 50px;
   box-shadow: inset 0 11px 8px -10px #343434;
   color: white;
+  position: relative;
+  margin: 0 0 0 30%;
 }
 .newsimage {
   width: 336px; 
   height: 210px; 
-  border-radius: 10px;
   box-shadow: 0 0 20px 5px black;
   float: left;
+  position: relative;
 }
 .des {
   float: left;
   padding-left: 30px;
   height: 100px;
   width: 400px;
-
 }
 strong {
   font-size: 20px;
   font-weight: bold;
-}
-.box {
-  margin: 0 0 0 30%;
 }
 
 /*
