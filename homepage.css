@@ -295,6 +295,7 @@ strong {
   height: 100px;
   margin-top: 60px;
   clear: both;
+  position: relative;
 }
 .primary-footer small {
   float: left;
