@@ -295,7 +295,6 @@ strong {
   height: 100px;
   margin-top: 60px;
   clear: both;
-  position: relative;
 }
 .primary-footer small {
   float: left;
@@ -337,4 +336,5 @@ strong {
 }
 .teaser a:hover h3 {
   color:#a800d6;
+  color: #a800d6;
 }
